@@ -1,0 +1,89 @@
+
+html{
+    background-color: #e9ded9;
+    color:#504852;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    padding-bottom: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    line-height: 1.2em;
+}
+h1 {
+    text-align: center;
+    color:#875738;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 0.5;
+}
+h3 {
+    text-align: center;
+}
+.оглавления {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    font-weight: bold;
+    list-style: none;
+    margin: 1em;
+    padding: 0;
+    column-count: 1;
+    text-decoration: none;
+  }
+.абзацы {
+    padding-left: 3em;
+}
+.контакты {
+    text-align: center;
+}  
+h4 {
+    font-size: 1.1em;
+}
+
+.Work {
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#Media_block {
+    font-family: 'Lobster', cursive;
+    font-size: 2.1em;
+    line-height: 1.8em;
+}
+table {
+    background-color: #ebd7c9;
+}
+.Table_heads_1 {
+    font-family: 'Caveat', cursive;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+.Table_heads_2 {
+    font-family: 'Caveat', cursive;
+    font-size: 1.1em;
+}
+#footer_link {
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+
+
+
+/*  Политра цветов:
+#f7f5f4 - белый
+#b98651 - светло коричн
+#875738 - коричн*
+#67777b - серый
+#332f35 - черно фиолетовый/
+/* Шрифты:
+'Nunito', sans-serif - Основной (400/600/800)
+'Amatic SC', cursive; - Аналог Comic MC (400/700) (плохо читается при мелком шрифте)
+'Caveat', cursive; - декор курсив 1 (400/700)
+'Marck Script', cursive; - декор курсив 2 (400)
+'Lobster', cursive; - декор курсив 3 (400)
+  */

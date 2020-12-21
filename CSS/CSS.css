@@ -1,0 +1,108 @@
+
+html {
+    box-sizing: border-box;
+    background-color: #e9ded9;
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
+    font-size: 1rem;
+  } 
+*,
+*:before,
+*:after {
+            box-sizing: inherit;
+        }
+.body_grid {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 10% minmax(max-content, 0.8fr) minmax(max-content, 2fr) minmax(max-content, 1fr) 10%;
+    grid-template-rows: minmax(max-content, auto) minmax(max-content, 6fr) minmax(max-content, 3em) minmax(max-content, 10fr) minmax(max-content, 4fr);
+    color:#d5c3da;
+    grid-template-areas:
+    "header_nav header_nav header_nav header_nav header_nav"
+    "header header header header header"
+    ". nav nav nav ."
+    ". aside main main ."
+    "footer footer footer footer footer"
+}
+.body_grid > * {
+    border: 3px solid green;
+    background-color: #504852;
+}
+.header_nav {
+    grid-area: header_nav;
+    color:rgb(220, 210, 191);
+    background-color: #39290b;
+    transition: all 0.3s;
+}
+    #h_n_main_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+        .h_n_bp {
+            display: flex;
+        }
+            .h_n_logo {
+                height: 3em;
+                padding: 0.5em 1em;
+                color: #39290b;
+                background-color: green;
+                margin-right: 1em;
+                text-align: center;
+                transition: all 0.5s;
+            }
+            .h_n_logo:hover {
+                color:rgb(167, 221, 255);
+            }
+            .h_n_left_buttons {
+                text-transform: uppercase;
+            }
+            .h_n_buttons {
+                color:rgb(220, 210, 191);
+                padding: 0 2em;
+                line-height: 3em;
+                min-width: max-content;
+                transition: all 0.5s;
+            }
+                .h_n_buttons:hover {
+                    color:white;                   
+                }
+.header {
+    grid-area: header;
+}
+.nav {
+    grid-area: nav;
+    line-height: 2em;
+    border: none;
+    margin: 2px 0 1.5rem;
+    place-self: center;
+}
+    .nav a {    
+        display: inline-block;
+        line-height: 2em;
+        padding: 0 2em;
+        color: aqua;
+        border-right:  4px inset rgb(208, 158, 231);
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.3s;
+        /* при ховере видно что слева от каждой кнопки есть непонятный проблем в несколько пикселей, который не видно при ф12 ни в каких паддингах и т.п. */
+    }
+    .nav a:last-child{
+        border-right: none;
+    }
+    .nav a:hover {
+        color: rgb(167, 221, 255);
+        background-color: #5f5c60;
+        padding: 0 2.3em;
+    }
+.aside {
+    grid-area: aside;
+}
+.main {
+    grid-area: main;
+    margin-left: 1.5em;
+}
+.footer {
+    grid-area: footer;
+    margin-top: 1.5em;
+}
